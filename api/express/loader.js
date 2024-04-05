@@ -4,7 +4,7 @@ const note_classes = ["text-gray-500", "font-thin", "text-sm", "pt-1"];
 const btn_parent_classes = ["flex", "flex-row-reverse"];
 const btn_classes = ["bg-green-600", "hover:bg-green-800", "text-white", "font-bold", "py-2", "px-4", "rounded", "focus:outline-none", "focus:shadow-outline"];
 
-fetch('./data.json')
+fetch('/express/data.json')
     .then((response) => response.json())
     .then((json) => {
         var list = document.getElementById("list_parent");

@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const path = require('path');
 
-var json = require("./cliente_servidor/data.json")
+var json = require(path.join(process.cwd(),"api","cliente_servidor","data.json"));
 
 // app.get("/express", (req, res) => res.send("Express on Vercel!"));
 // app.get("/cliente_servidor", (req, res) => res.send("Cliente Servidor on Vercel!"));
